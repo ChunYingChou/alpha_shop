@@ -1,4 +1,4 @@
-import { createContext } from 'react'
+import { createContext, useContext, useState } from 'react'
 
 
 export const initialProducts = [
@@ -19,4 +19,20 @@ export const initialProducts = [
 ]
 
 
-export const CartContext = createContext()
+const CartContext = createContext({
+  product: []
+})
+
+export const useCartContext = () => {
+  return useContext(CartContext)
+}
+
+export default function ({ children }) {
+  const [product, setProduct ] = useState(initialProducts);
+  return (
+    <CartContext.Provider value={{ product, setProduct }}>
+      { children }
+    </CartContext.Provider>
+  )
+
+}
