@@ -1,4 +1,4 @@
-.control__panel {
+.control-panel {
   width: 100%;
   margin: 50px auto;
   /* outline: 1px solid red; */
@@ -11,14 +11,14 @@
   /* margin-left: 30px; */
 }
 
-.button__area {
+.button-area {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.btn__previous,
-.btn__next,
-.btn__order {
+.btn-previous,
+.btn-next,
+.btn-order {
 width: 147px;
 height: 46px;
 border-radius: 8px;
@@ -27,18 +27,18 @@ cursor: pointer;
 /* margin-left: 30px; */
 }
 
-.btn__previous{
+.btn-previous{
   background-color: white;
   color: black;
 }
 
-.btn__next,
-.btn__order {
+.btn-next,
+.btn-order {
   grid-column: 3/4;
   background-color: #F67599;
   color: white;
 }
 
-.btn__order {
+.btn-order {
   display: none;
 }

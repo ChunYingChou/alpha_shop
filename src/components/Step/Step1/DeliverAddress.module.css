@@ -37,7 +37,7 @@ select  {
 
 select {
   width: 200px;
-  -webkit-appearance: none;
+  -webkit-appearance: none; 
   cursor: pointer;
   font-size: 12px;
   background-color: transparent;
