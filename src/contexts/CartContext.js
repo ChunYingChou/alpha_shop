@@ -27,7 +27,7 @@ export const useCartContext = () => {
   return useContext(CartContext)
 }
 
-export default function ({ children }) {
+export default function CartContext2({ children }) {
   const [product, setProduct ] = useState(initialProducts);
   return (
     <CartContext.Provider value={{ product, setProduct }}>

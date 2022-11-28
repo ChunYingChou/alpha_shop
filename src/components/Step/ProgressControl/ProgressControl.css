@@ -5,13 +5,15 @@
 }
 
 .line {
-  width: 600px;
+  width: 650px;
   border-top: 1px solid #E6E6EB;
   margin-bottom: 30px;
+  margin-top: 50px;
   /* margin-left: 30px; */
 }
 
-.button-area {
+.button-group {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -19,12 +21,15 @@
 .btn-previous,
 .btn-next,
 .btn-order {
+position: absolute;
 width: 147px;
 height: 46px;
 border-radius: 8px;
 border: none;
 cursor: pointer;
-/* margin-left: 30px; */
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .btn-previous{
@@ -35,10 +40,8 @@ cursor: pointer;
 .btn-next,
 .btn-order {
   grid-column: 3/4;
+
   background-color: #F67599;
   color: white;
 }
 
-.btn-order {
-  display: none;
-}

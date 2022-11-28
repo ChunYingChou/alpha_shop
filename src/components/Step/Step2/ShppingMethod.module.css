@@ -6,6 +6,8 @@
 }
 
 .choose__part {
+  width: 648px;
+  height: 247px;
   display: flex;
   flex-direction: column;
 }
