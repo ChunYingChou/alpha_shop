@@ -1,15 +1,14 @@
 import React from 'react'
-import { useContext } from 'react'
 import CartItem from './CartItem'
 import './Cart.css'
-import { CartContext } from '../../contexts/CartContext'
+import { useCartContext } from '../../contexts/CartContext'
 
 
 export default function Cart() {
-  const {data, setData} = useContext(CartContext)
+  const { product, setProduct } = useCartContext()
 
   let totalPrice = 0
-  data.forEach(data => {
+  product.forEach(data => {
     totalPrice += data.price * data.quantity
   })
 
@@ -21,7 +20,7 @@ export default function Cart() {
          <h3 className="cart-title">購物籃</h3>
 
          <section className="product-list">
-           <CartItem data={data} setData={setData} />
+           <CartItem data={product} setData={setProduct} />
          </section>
 
          <section className="cart-info shipping col col-12">
