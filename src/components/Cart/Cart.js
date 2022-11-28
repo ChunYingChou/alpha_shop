@@ -25,7 +25,7 @@ export default function Cart() {
 
          <section className="cart-info shipping col col-12">
          <div className="text">運費</div>
-         <div className="price">$100</div>
+         <div className="price">免費</div>
        </section>
 
       <section className="cart-info total col col-12">

@@ -1,11 +1,24 @@
-import { createContext } from 'react';
+// import { createContext } from 'react';
 
-const initialData = {
+// export const CreditCardContext = {
+//   totalPrice: 300,
+//   CardName: '',
+//   CardNumber: '',
+//   CardExp: '',
+//   CardCCV: '',
+// }
+
+// export const SubmitFormContext = createContext(CreditCardContext)
+
+
+import { createContext } from 'react'
+
+const FormContext = createContext({
   totalPrice: 300,
-  CardName: '',
-  CardNumber: '',
-  CardExp: '',
-  CardCCV: '',
-}
+  creditName: '',
+  creditNumber: '',
+  creditExp: '',
+  creditCVC: '',
+})
 
-export const FormContext = createContext(initialData)
+export { FormContext }
