@@ -47,7 +47,7 @@ export default function Main() {
           <section
             className="register-container col col-lg-6 col-sm-12"
             data-phase={currentStep}
-            data-total-price="0">
+            data-total-price="">
               <Register
                 currentStep={currentStep}
                 handleNextClick={handleNextClick}

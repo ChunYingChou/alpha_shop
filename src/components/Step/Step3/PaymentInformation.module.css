@@ -44,8 +44,8 @@ input {
   color: #4a4a4a;
 }
 
-#input__name,
-#input__number {
+.input__name,
+.input__number {
   width: 350px;
 }
 
@@ -55,8 +55,8 @@ input {
   height: 19px;
 }
 
-#input__date,
-#input__cvc {
+.input__date,
+.input__cvc {
   width: 255px;
 }
 

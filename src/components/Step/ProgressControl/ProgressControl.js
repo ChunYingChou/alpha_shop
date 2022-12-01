@@ -10,7 +10,6 @@ export default function ProgressControl({ currentStep, handleNextClick, handlePr
   const handleSubmitClick = () => {
     console.log(formData)
   }
-
   return (
     <div>
       <section className="progress-control-container col col-lg-6 col-sm-12">
@@ -41,3 +40,4 @@ export default function ProgressControl({ currentStep, handleNextClick, handlePr
       </section>
     </div>
   )}
+      

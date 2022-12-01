@@ -27,8 +27,20 @@ export const useCartContext = () => {
   return useContext(CartContext)
 }
 
-export default function CartContext2({ children }) {
+export default function CartContext2 ({ children }) {
   const [product, setProduct ] = useState(initialProducts);
+  // const [formData, setFormData] = useState({ totalPrice: '' })
+
+  // function handleFormChange(event) {
+  //   const { name, value } = event.target
+  //   setFormData((prevFormData) => {
+  //     return {
+  //       ...prevFormData,
+  //       [name]: value,
+  //     }
+  //   })
+
+  // }
   return (
     <CartContext.Provider value={{ product, setProduct }}>
       { children }
