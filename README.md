@@ -9,7 +9,7 @@
 
 完成的元件包含：
 
-- Main 裡面的五個區塊 (還未撰寫換頁邏輯)
+- Main 裡面的五個區塊
   - StepProgress
   - Step1-DeliverAddress
   - Step2-ShppingMethod
