@@ -27,8 +27,23 @@ export const useCartContext = () => {
   return useContext(CartContext)
 }
 
+
 export default function CartContext2 ({ children }) {
-  const [product, setProduct ] = useState(initialProducts);
+  const [ product, setProduct ] = useState(initialProducts);
+
+   const total = () => {
+    let totalPrice = 0
+    product.forEach( item => {
+      totalPrice += item.price * item.quantity
+    })
+    return totalPrice
+   }
+
+  // const totalPrice = function Total() {
+  //   let totalPrice = null
+  //   product.map(product => totalPrice += product.price * product.quantity)
+  //   return totalPrice
+  // }
   // const [formData, setFormData] = useState({ totalPrice: '' })
 
   // function handleFormChange(event) {
@@ -42,7 +57,7 @@ export default function CartContext2 ({ children }) {
 
   // }
   return (
-    <CartContext.Provider value={{ product, setProduct }}>
+    <CartContext.Provider value={{ product, setProduct, total }}>
       { children }
     </CartContext.Provider>
   )

@@ -1,14 +1,18 @@
-
 import './ProgressControl.css'
 import { useContext } from 'react'
 import { FormContext } from '../../../contexts/FormContext'
 import { ReactComponent as RightArrow } from '../../../icons/right-arrow.svg'
 import { ReactComponent as LeftArrow }  from '../../../icons/left-arrow.svg'
+import { useCartContext } from '../../../contexts/CartContext'
 
 export default function ProgressControl({ currentStep, handleNextClick, handlePrevClick }) {
   const { formData } = useContext(FormContext)
+
+  const { total } = useCartContext()
+
   const handleSubmitClick = () => {
     console.log(formData)
+    console.log(`總金額:${total()}`)
   }
   return (
     <div>
