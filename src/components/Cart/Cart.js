@@ -2,17 +2,16 @@ import React from 'react'
 import CartItem from './CartItem'
 import './Cart.css'
 import { useCartContext } from '../../contexts/CartContext'
-// import { useContext } from 'react'
+// import { useEffect, useState } from 'react'
 // import { FormContext } from '../../contexts/FormContext'
 
 export default function Cart() {
   const { product, setProduct, total } = useCartContext()
-  // const { handleFormChange } = useContext(FormContext)
-  //   let totalPrice = 0
-  //   product.forEach(data => {
-  //   totalPrice += data.price * data.quantity
-  //   })
- 
+
+    // let totalPrice = 0
+    // product.forEach(data => {
+    // totalPrice += data.price * data.quantity
+    // })
 
   return (
     <div className="col col-lg-5 col-sm-12">

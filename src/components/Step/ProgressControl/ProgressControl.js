@@ -12,8 +12,9 @@ export default function ProgressControl({ currentStep, handleNextClick, handlePr
 
   const handleSubmitClick = () => {
     console.log(formData)
-    console.log(`總金額:${total()}`)
+    console.log(`TotalPrice: ${total()}`)
   }
+  
   return (
     <div>
       <section className="progress-control-container col col-lg-6 col-sm-12">

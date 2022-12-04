@@ -43,6 +43,7 @@ export default function Main() {
               handleFormChange,
             }}
           >
+            <ProductProvider>
           {/* 結帳區 */}
           <section
             className="register-container col col-lg-6 col-sm-12"
@@ -56,7 +57,7 @@ export default function Main() {
           </section>
           
           {/* 購物車區*/}
-          <ProductProvider>
+          
             <div>
               <Cart />
             </div>
